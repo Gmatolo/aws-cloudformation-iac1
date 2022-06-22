@@ -2,6 +2,7 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: Create s3 bucket
 Resources:
   S3Bucket:
+    DeletionPolicy: Retain
     Type: AWS::S3::Bucket
     Description: Create Amazon S3 bucket using CloudFormation
     Properties:
